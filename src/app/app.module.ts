@@ -11,6 +11,8 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { TemaComponent } from './tema/tema.component';
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
-    TemaComponent
+    TemaComponent,
+    TemaEditComponent,
+    TemaDeleteComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [{
     provide: LocationStrategy,
